@@ -1,0 +1,1345 @@
+body {
+  background-color: #F1DABF;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  border-top: -20%;
+  }
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  background-color: #583B37;
+  border: 1px solid #DAA520;
+  padding: 20px 55px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #DAA520;
+  font-size: 15px;
+}
+
+.tab-button:hover {
+  background-color: #583b37c6;
+  border: 1px solid #DAA520;
+  color: #F1DABF;
+  padding: 21px 51px;
+  font-size: 17px;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.image-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;}
+
+  
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  
+}
+
+@media screen and (max-width: 844px) {
+  .responsive-image {
+      max-width: 80%; /* Tamanho máximo de imagem para dispositivos móveis */
+  }
+
+  .tab-button {
+  padding: 8px 8px;}
+
+  .tab-button:hover {
+    padding: 9px 9px;
+  }
+
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent, );
+  box-sizing: border-box;
+}
+
+
+.text-box {
+  background: linear-gradient(to left, transparent 15%,  #DAA520);
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40%;
+}
+
+.restaurante {
+    width: 500px; 
+    height: auto;
+}
+
+#content1 { 
+    border: 2px solid #583B37;
+    width: 78%;
+    height: 65%;
+    margin-top: 20px;
+}
+
+#content2 { 
+    border: 2px solid #583B37;
+    width: 78%;
+    height: 65%;
+    margin-top: 20px;
+}
+
+#content3 {
+    color: #DAA520;
+}
+
+
+.dallahD { /*Imagem da cafeteria*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.dallahD img {
+  border: 2px solid black;
+}
+
+/*others*/
+
+.container {
+    max-width: 1080%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+
+    background-color: #583B37;
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.logo {
+
+    width: 20%;
+    position: center;
+    margin-left: 151px;
+
+
+}
+
+.logo img {
+
+    width: 45%;
+    cursor: pointer;
+}
+
+
+#menu {
+    width: 50%;
+}
+
+
+/*Burguer menu*/
+
+.menuOculto{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #583B37;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top:60px ;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menuOculto a{
+  padding: 8px 8px 32px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.menuOculto a:hover{
+  background-color: #DAA520;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.btnFechar{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#principal{
+  padding: 16px;
+  transition-duration: 0.5s;
+}
+@media screen and (max-height:450px){
+  .menuOculto{padding-top:15px;}
+  .menuOculto a{font-size: 18px;}
+}
+  
+
+#menu-button2 {
+  background-color: #F1DABF;
+  border-color: #F1DABF;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  color: #583B37;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+    /* Estilos globais */
+    #corpoHistória {
+      font-family: Arial, sans-serif;
+      background-color: #F1DABF;
+      padding: 0;      
+    }
+    
+    /* Estilos para o contêiner principal */
+    .container2 {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #583B37;
+      height: 149%;
+      margin-top: 10px;
+      max-width: 100%;
+      
+    }
+    
+    .format {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    /* Estilos para o título da seção */
+    .tituloHistória {
+      font-size: 32px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    #descriçãoHistória {
+      color: #FFFFFF;
+      text-align: justify;
+    }
+
+
+
+#escritadestaque {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.fileira1 {
+    margin-top: 10%;
+}
+
+.fileira2 {
+    margin-top: 10%;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: -124;
+}
+
+/* Estilização para o container dos destaques */
+
+.destaque-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* Estilização para a grade de destaques */
+  .destaque-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /*Regula a distância entre cada elemento da grade destaque*/
+    margin: 130px;
+    margin-left: -100%;
+    margin-top: 5%;
+  }
+
+  
+  /* Estilização para cada item de destaque */
+  .destaque-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+    
+  }
+  
+  /* Estilização para a imagem do destaque */
+  .destaque-item-img img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Estilização para o título do destaque */
+  .destaque-item-info h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilização para a descrição do destaque */
+  .destaque-item-info p {
+    margin-top: 10px;
+  }
+  
+  /* Estilização para o link "Ver Receita" */
+  .destaque-item-info .botao-destaque {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #583B37;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .destaque-item-info {
+    width: 384px;
+
+
+  }
+  
+  .destaque-item-info .botao-destaque:hover {
+    background-color: #462c2cfd;
+    padding: 13px 23px;
+  }
+
+  #perfil-usuario {
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999px;
+    cursor: pointer;
+  }
+  
+
+  /*Rodapé*/
+
+
+.footer {
+  padding: 0;
+  color: #FFFFFF;
+  background-color: #583B37;
+}
+
+.container-footer {
+    max-width: 100%; /*Defina a largura máxima*/
+    margin: 0; /*Define as margens ao redor do elemento conteiner:0-para superior e inferior e auto-para as margens da direita e da esquerda que ser�o automaticamente ajustadas*/
+    padding: 35px;
+    align-items: center;
+    display: flex;/*Torna o container flexível*/
+    justify-content: space-between; /*Deixa o espaço entre cada título igual*/
+    flex-wrap: wrap; /*Controla como os elementos flexíveis se ajustam em uma posição valor wrap permite que os elementos sejam dispostos em v�rias linhas, se necess�rio, para evitar a quebra do layout */
+    text-align: justify;
+}
+
+.footer-logo img {
+    width: 7.5rem; /*Largura*/
+    height: auto; /*Preserva a proporção original da imagem*/
+}
+
+.footer-informação,
+.footer-social,
+.footer-pagamento {
+    flex-basis: 25%; /*Indica a largura inicial*/
+    margin-bottom: 0%; /*Está definindo a margem inferior*/
+    border: none;
+}
+
+.footer-titulo1 {
+    font-size: 122%;
+    margin-bottom: 1%; /*define a margem inferior*/
+    margin-top: 13%;
+    
+}
+
+.footer-titulo {
+    font-size: 122%;
+    margin-bottom: 1%; /*define a margem inferior*/
+    
+}
+
+.social-links li {
+    display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+    margin-right: 10%; /*Margem da direita*/
+}
+
+.social-links a {
+    color: #333333;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+
+.formas-de-pagamento li {
+    display: inline-block; /*Permitite que os elementos sejam posicionados lado a lado no fluxo do documento.*/
+    margin-right: 10%; /*Margem da direita*/
+}
+
+.formas-de-pagamento a {
+    color: #333333;
+    font-size: 2vw;
+    color: #FFFFFF;
+}
+
+.direitos {
+    text-align: center;
+}
+/*Estilos responsivos para dispositivos móveis*/
+
+@media screen and (max-width: 950px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+
+    }
+  
+    .logo {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .menu {
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    nav {
+      margin-left: 0;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    .menu nav a {
+      padding-right: 0;
+    }
+
+  
+    .destaque-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 9%;
+      margin-right: 9%;
+    }
+  
+    .destaque-item-info {
+      width: 100%;
+    }
+
+    .footer {
+      height: 35%;
+    }
+
+    .footer-titulo1 {
+      margin-top: 61%;
+    }
+
+  .footer-logo img {
+    transform: translateX(75%);
+    margin-top: -37%;
+    position: absolute;
+  }
+  .footer-informação {
+    margin-top: -15%;
+  }
+
+  .footer-informação,
+  .footer-social,
+  .footer-pagamento {
+    flex-basis: 100%; /* Ocupa toda a largura */
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  i {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 950px) {
+    .menuOculto {
+      height: 40%;
+      padding-top: 50px;
+      width: 40%;
+    }
+  
+    .menuOculto a {
+      font-size: 18px;
+      padding: 8px 8px 12px 32px;
+    }
+  
+    .btnFechar {
+      font-size: 24px;
+    }
+  
+    #principal {
+      margin-left: 250px;
+    }
+  }
+}
+
+
+.coffee-list-container {
+  margin-bottom: 30px;
+}
+  
+  /*ESTILIZAÇÃO DO PÁGINA CAFÉ*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+
+    max-width: 1080%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+
+    background-color: #583B37;
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.logo {
+
+    width: 25%;
+    text-align: center;
+}
+
+.logo img {
+
+    width: 25%;
+    cursor: pointer;
+}
+
+.sociais {
+    
+    width: 25%;
+}
+
+.menu {
+    background-color: #583B37;
+    width: 50%;
+}
+
+.menu nav a {
+
+    color: white;
+    text-decoration: none;
+    padding-right: 7%;
+    font-size: 100%;
+    position: relative;
+}
+
+nav {
+    margin-left: -41%;}
+
+.menu nav a::after {
+
+    content: " ";
+    width: 0%;
+    height: 15%;
+    background-color: #DAA520;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30%;
+}
+
+.sociais button{
+
+    width: 30%;
+    height: 30%;
+    background-color:  #583B37;
+    border: none;
+    margin-right: -53%;
+    cursor: pointer; 
+}
+
+.sociais button i {
+
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+  
+  
+      h1 {
+        font-family: "Poppys Black", sans-serif;
+        font-size: 36px;
+        color: #583B37;
+        text-align: center;
+        margin-bottom: 45px;
+        margin-top: 45px;
+      }
+  
+      .coffee-list-container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .coffee-item {
+        flex-shrink: 0;
+        width: 400px;
+        height: 400px;
+        background-color: #583B37;
+        border-radius: 10px;
+        margin-right: 20px;
+        color: #f1dabf;
+        text-align: center;
+        padding: 20px;
+        scroll-snap-align: start;
+        cursor: pointer;
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: var(--h1) var(--v1) var(--blur1) var(--color-dark), 
+        var(--h2) var(--v2) var(--blur2) var(--color-light);
+      }
+  
+      .coffee-item img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+  
+      .coffee-item h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      .coffee-item p {
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+  
+      .scrollbar {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background-color: #f1dabf;
+        margin-top: 20px;
+      }
+  
+      .scrollbar-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #583B37;
+        transition: width 0.2s;
+      }
+  
+      .volta {
+      text-decoration: none;
+      color: #f1dabf;
+      display: flex;
+      justify-content: center;
+  
+      }
+
+    .container {
+        max-width: 95%; /*Defina a largura m�xima*/
+        margin: 0 auto; /*Define as margens ao redor do elemento conteiner:0-para superior e inferior e auto-para as margens da direita e da esquerda que ser�o automaticamente ajustadas*/
+        display: flex;/*Torna o container flex�vel*/
+        justify-content: space-between; /*Deixa o espa�o entre cada t�tulo igual*/
+        flex-wrap: wrap; /*Controla como os elementos flex�veis se ajustam em uma �nicaO valor wrap permite que os elementos sejam dispostos em v�rias linhas, se necess�rio, para evitar a quebra do layout */
+    }
+    
+
+    /*Estilos responsivos para dispositivos móveis*/
+@media screen and (max-width: 844px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+
+  }
+
+  .logo {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  nav {
+    margin-left: 0;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .menu nav a {
+    padding-right: 0;
+  }
+
+  .destaque-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+
+  .destaque-item-info {
+    width: 100%;
+  }
+
+.coffee-item{
+  width: 100%;
+}
+
+}
+    /*FOOD CSS*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+    .manu {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+
+max-width: 1080%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+header {
+
+background-color: #583B37;
+width: 100%;
+padding: 1%;
+
+}
+
+.logo {
+
+width: 25%;
+text-align: center;
+}
+
+.logo img {
+
+width: 25%;
+cursor: pointer;
+}
+
+.sociais {
+
+width: 25%;
+}
+
+.menu {
+background-color: #583B37;
+width: 50%;
+}
+
+.menu nav a {
+
+color: white;
+text-decoration: none;
+padding-right: 7%;
+font-size: 100%;
+position: relative;
+}
+
+nav {
+margin-left: -41%;}
+
+.menu nav a::after {
+
+content: " ";
+width: 0%;
+height: 15%;
+background-color: #DAA520;
+position: absolute;
+top: 120%;
+left: 0%;
+transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+width: 30%;
+}
+
+.sociais button{
+
+width: 30%;
+height: 30%;
+background-color:  #583B37;
+border: none;
+margin-right: -53%;
+cursor: pointer; 
+}
+
+.sociais button i {
+
+font-size: 200%;
+color: #FFFFFF;
+}
+
+
+
+
+  h1 {
+    font-family: "Poppys Black", sans-serif;
+    font-size: 36px;
+    color: #583B37;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 45px;
+  }
+
+.container {
+    max-width: 95%; /*Defina a largura m�xima*/
+    margin: 0 auto; /*Define as margens ao redor do elemento conteiner:0-para superior e inferior e auto-para as margens da direita e da esquerda que ser�o automaticamente ajustadas*/
+    display: flex;/*Torna o container flex�vel*/
+    justify-content: space-between; /*Deixa o espa�o entre cada t�tulo igual*/
+    flex-wrap: wrap; /*Controla como os elementos flex�veis se ajustam em uma �nicaO valor wrap permite que os elementos sejam dispostos em v�rias linhas, se necess�rio, para evitar a quebra do layout */
+}
+
+/*Estilos responsivos para dispositivos móveis*/
+@media screen and (max-width: 950px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+
+    }
+  
+    .logo {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .menu {
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    nav {
+      margin-left: 0;
+      text-align: center;
+      margin-right: 20px;
+    }
+  
+    .menu nav a {
+      padding-right: 0;
+    }
+  
+    .destaque-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 9%;
+      margin-right: 9%;
+    }
+  
+    .destaque-item-info {
+      width: 100%;
+    }
+
+  .coffee-list-container {
+    margin-bottom: 30px;
+  }
+
+}
+
+/*Estilização da página de BEBIDAS*/
+
+.menu {
+  background-color: #583B37;
+  width: 50%;
+}
+
+.menu nav a {
+
+  color: white;
+  text-decoration: none;
+  padding-right: 7%;
+  font-size: 100%;
+  position: relative;
+}
+
+nav {
+  margin-left: -41%;}
+
+.menu nav a::after {
+
+  content: " ";
+  width: 0%;
+  height: 15%;
+  background-color: #DAA520;
+  position: absolute;
+  top: 120%;
+  left: 0%;
+  transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+  width: 30%;
+}
+
+
+    h1 {
+      font-family: "Poppys Black", sans-serif;
+      font-size: 36px;
+      color: #583B37;
+      text-align: center;
+      margin-bottom: 45px;
+      margin-top: 45px;
+    }
+
+    .beverage-list-container {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    .beverage-item {
+      flex-shrink: 0;
+      width: 400px;
+      height: 400px;
+      background-color: #583B37;
+      border-radius: 10px;
+      margin-right: 20px;
+      color: #f1dabf;
+      text-align: center;
+      padding: 20px;
+      scroll-snap-align: start;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: var(--h1) var(--v1) var(--blur1) var(--color-dark), 
+      var(--h2) var(--v2) var(--blur2) var(--color-light);
+    }
+
+    .beverage-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .beverage-item h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .beverage-item p {
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .scrollbar {
+      position: relative;
+      width: 100%;
+      height: 6px;
+      background-color: #f1dabf;
+      margin-top: 20px;
+    }
+
+    .scrollbar-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #583B37;
+      transition: width 0.2s;
+    }
+
+    .volta {
+    text-decoration: none;
+    color: #f1dabf;
+    display: flex;
+    justify-content: center;
+
+    }
+    @media screen and (max-width: 950px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+  
+      }
+    
+      .logo {
+        width: 100%;
+        height: 80px; /* Defina uma altura fixa para a logo */
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    
+      .menu {
+        width: 100%;
+        text-align: center;
+        margin: 0; /* Remova a margem direita */
+      }
+    
+      nav {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 20px;
+      }
+    
+      .menu nav a {
+        padding: 10px 20px; /* Adicione padding vertical para espaçamento */
+        display: block;
+      }
+    
+      .destaque-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 9%;
+        margin-right: 9%;
+      }
+    
+      .destaque-item-info {
+        width: 100%;
+      }
+  
+      .footer-informação {
+        margin-top: -25%;
+      }
+  
+      .footer-informação,
+      .footer-social,
+      .footer-pagamento {
+        flex-basis: 100%; /* Ocupa toda a largura */
+      }
+  
+      .social-links {
+        font-size: 100%;
+      }
+    }
+    
+    .beverage-list-container {
+      margin-bottom: 30px;
+    }
+
+    /*Estilização da página de SALGADOS*/
+
+    .snack-list-container {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    .snack-item {
+      flex-shrink: 0;
+      width: 400px;
+      height: 400px;
+      background-color: #583B37;
+      border-radius: 10px;
+      margin-right: 20px;
+      color: #f1dabf;
+      text-align: center;
+      padding: 20px;
+      scroll-snap-align: start;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: var(--h1) var(--v1) var(--blur1) var(--color-dark), 
+      var(--h2) var(--v2) var(--blur2) var(--color-light);
+    }
+
+    .snack-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .snack-item h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .snack-item p {
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+     /*Estilos responsivos para dispositivos móveis*/
+
+     @media screen and (max-width: 950px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+  
+      }
+      .snack-item {
+        width: 100%; /* Ocupa a largura total em dispositivos móveis */
+        max-width: 300px; /* Define uma largura máxima */
+        margin-right: 2; /* Remove a margem direita */
+      }
+      
+    
+      .logo {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    
+      .menu {
+        width: 100%;
+        text-align: center;
+        margin-right: 20px;
+      }
+    
+      nav {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 20px;
+      }
+    
+      .menu nav a {
+        padding: 10px 20px; /* Adicione padding vertical para espaçamento */
+        display: block;
+      }
+    
+      .destaque-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 9%;
+        margin-right: 9%;
+      }
+    
+      .destaque-item-info {
+        width: 100%;
+      }
+  
+      .footer-informação {
+        margin-top: -25%;
+      }
+  
+      .footer-informação,
+      .footer-social,
+      .footer-pagamento {
+        flex-basis: 100%; /* Ocupa toda a largura */
+      }
+  
+      .social-links {
+        font-size: 100%;
+      }
+    }
+    
+    .snack-list-container {
+      margin-bottom: 30px;
+    }
+
+    /*Estilização das páginas TORTAS e SANDUÍCHES*/
+
+    /*Estilos responsivos para dispositivos móveis*/
+    @media screen and (max-width: 950px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap; /* Controla como os elementos flexíveis se ajustam em uma única linha */
+  
+      }
+    
+      .logo {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    
+      .menu {
+        width: 100%;
+        text-align: center;
+        margin-right: 20px;
+      }
+    
+      nav {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 20px;
+      }
+    
+      .menu nav a {
+        padding-right: 0;
+      }
+    
+      .destaque-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 9%;
+        margin-right: 9%;
+      }
+    
+      .destaque-item-info {
+        width: 100%;
+      }
+  
+
+      .footer-informação {
+        margin-top: -25%;
+      }
+  
+      .footer-informação,
+      .footer-social,
+      .footer-pagamento {
+        flex-basis: 100%; /* Ocupa toda a largura */
+      }
+  
+      .social-links {
+        font-size: 100%;
+      }
+    }
+    
+    .coffee-list-container {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 320px){
+      
+    .footer {
+      height: 500px;
+    }
+
+    }
